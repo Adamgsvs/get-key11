@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 40 | Scripts: 17 | Modules: 0 | Tags: 0
+-- Instances: 42 | Scripts: 17 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
@@ -192,146 +192,158 @@ G2L["14"] = Instance.new("LocalScript", G2L["10"]);
 
 
 
+-- StarterGui.ScreenGui.Frame.ImageLabel.UIStroke
+G2L["15"] = Instance.new("UIStroke", G2L["10"]);
+G2L["15"]["Transparency"] = 0.92;
+G2L["15"]["Thickness"] = 4;
+G2L["15"]["Color"] = Color3.fromRGB(207, 207, 207);
+
+
+-- StarterGui.ScreenGui.Frame.ImageLabel.UICorner
+G2L["16"] = Instance.new("UICorner", G2L["10"]);
+G2L["16"]["CornerRadius"] = UDim.new(0, 100);
+
+
 -- StarterGui.ScreenGui.Frame.UICorner
-G2L["15"] = Instance.new("UICorner", G2L["2"]);
+G2L["17"] = Instance.new("UICorner", G2L["2"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.ImageLabel
-G2L["16"] = Instance.new("ImageLabel", G2L["2"]);
-G2L["16"]["ZIndex"] = 2;
-G2L["16"]["BorderSizePixel"] = 0;
-G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["16"]["Image"] = [[rbxassetid://85755685416052]];
-G2L["16"]["Size"] = UDim2.new(0, 47, 0, 45);
-G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["16"]["BackgroundTransparency"] = 1;
-G2L["16"]["Position"] = UDim2.new(0.91035, 0, 0.02144, 0);
+G2L["18"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["18"]["ZIndex"] = 2;
+G2L["18"]["BorderSizePixel"] = 0;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18"]["Image"] = [[rbxassetid://85755685416052]];
+G2L["18"]["Size"] = UDim2.new(0, 47, 0, 45);
+G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["BackgroundTransparency"] = 1;
+G2L["18"]["Position"] = UDim2.new(0.91035, 0, 0.02144, 0);
 
 
 -- StarterGui.ScreenGui.Frame.ImageLabel.UICorner
-G2L["17"] = Instance.new("UICorner", G2L["16"]);
-G2L["17"]["CornerRadius"] = UDim.new(0, 100);
+G2L["19"] = Instance.new("UICorner", G2L["18"]);
+G2L["19"]["CornerRadius"] = UDim.new(0, 100);
 
 
 -- StarterGui.ScreenGui.Frame.ImageLabel.LocalScript
-G2L["18"] = Instance.new("LocalScript", G2L["16"]);
+G2L["1a"] = Instance.new("LocalScript", G2L["18"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.ImageLabel.UIStroke
-G2L["19"] = Instance.new("UIStroke", G2L["16"]);
-G2L["19"]["Transparency"] = 0.78;
-G2L["19"]["Thickness"] = 3.8;
+G2L["1b"] = Instance.new("UIStroke", G2L["18"]);
+G2L["1b"]["Transparency"] = 0.78;
+G2L["1b"]["Thickness"] = 3.8;
 
 
 -- StarterGui.ScreenGui.Frame.ImageLabel.UIAspectRatioConstraint
-G2L["1a"] = Instance.new("UIAspectRatioConstraint", G2L["16"]);
+G2L["1c"] = Instance.new("UIAspectRatioConstraint", G2L["18"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.LocalScript
-G2L["1b"] = Instance.new("LocalScript", G2L["2"]);
+G2L["1d"] = Instance.new("LocalScript", G2L["2"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.close
-G2L["1c"] = Instance.new("TextButton", G2L["2"]);
-G2L["1c"]["TextWrapped"] = true;
-G2L["1c"]["BorderSizePixel"] = 0;
-G2L["1c"]["TextColor3"] = Color3.fromRGB(251, 251, 251);
-G2L["1c"]["TextSize"] = 14;
-G2L["1c"]["TextScaled"] = true;
-G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(189, 189, 189);
-G2L["1c"]["FontFace"] = Font.new([[rbxassetid://16658254058]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1c"]["ZIndex"] = 2;
-G2L["1c"]["Size"] = UDim2.new(0, 126, 0, 21);
-G2L["1c"]["BackgroundTransparency"] = 0.6;
-G2L["1c"]["Name"] = [[close]];
-G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c"]["Text"] = [[close]];
-G2L["1c"]["Position"] = UDim2.new(0.02444, 0, 0.90688, 0);
+G2L["1e"] = Instance.new("TextButton", G2L["2"]);
+G2L["1e"]["TextWrapped"] = true;
+G2L["1e"]["BorderSizePixel"] = 0;
+G2L["1e"]["TextColor3"] = Color3.fromRGB(251, 251, 251);
+G2L["1e"]["TextSize"] = 14;
+G2L["1e"]["TextScaled"] = true;
+G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(189, 189, 189);
+G2L["1e"]["FontFace"] = Font.new([[rbxassetid://16658254058]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1e"]["ZIndex"] = 2;
+G2L["1e"]["Size"] = UDim2.new(0, 126, 0, 21);
+G2L["1e"]["BackgroundTransparency"] = 0.6;
+G2L["1e"]["Name"] = [[close]];
+G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["Text"] = [[close]];
+G2L["1e"]["Position"] = UDim2.new(0.02444, 0, 0.90688, 0);
 
 
 -- StarterGui.ScreenGui.Frame.close.LocalScript
-G2L["1d"] = Instance.new("LocalScript", G2L["1c"]);
+G2L["1f"] = Instance.new("LocalScript", G2L["1e"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.close.LocalScript
-G2L["1e"] = Instance.new("LocalScript", G2L["1c"]);
+G2L["20"] = Instance.new("LocalScript", G2L["1e"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.LocalScript
-G2L["1f"] = Instance.new("LocalScript", G2L["2"]);
+G2L["21"] = Instance.new("LocalScript", G2L["2"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.get discord link
-G2L["20"] = Instance.new("TextButton", G2L["2"]);
-G2L["20"]["TextWrapped"] = true;
-G2L["20"]["BorderSizePixel"] = 0;
-G2L["20"]["TextColor3"] = Color3.fromRGB(251, 251, 251);
-G2L["20"]["TextSize"] = 14;
-G2L["20"]["TextScaled"] = true;
-G2L["20"]["BackgroundColor3"] = Color3.fromRGB(189, 189, 189);
-G2L["20"]["FontFace"] = Font.new([[rbxassetid://12187374098]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["20"]["ZIndex"] = 2;
-G2L["20"]["Size"] = UDim2.new(0, 130, 0, 21);
-G2L["20"]["BackgroundTransparency"] = 0.6;
-G2L["20"]["Name"] = [[get discord link]];
-G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["20"]["Text"] = [[get   discord   link]];
-G2L["20"]["Position"] = UDim2.new(0.18298, 0, 0.59876, 0);
+G2L["22"] = Instance.new("TextButton", G2L["2"]);
+G2L["22"]["TextWrapped"] = true;
+G2L["22"]["BorderSizePixel"] = 0;
+G2L["22"]["TextColor3"] = Color3.fromRGB(251, 251, 251);
+G2L["22"]["TextSize"] = 14;
+G2L["22"]["TextScaled"] = true;
+G2L["22"]["BackgroundColor3"] = Color3.fromRGB(189, 189, 189);
+G2L["22"]["FontFace"] = Font.new([[rbxassetid://12187374098]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["22"]["ZIndex"] = 2;
+G2L["22"]["Size"] = UDim2.new(0, 130, 0, 21);
+G2L["22"]["BackgroundTransparency"] = 0.6;
+G2L["22"]["Name"] = [[get discord link]];
+G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["Text"] = [[get   discord   link]];
+G2L["22"]["Position"] = UDim2.new(0.18298, 0, 0.59876, 0);
 
 
 -- StarterGui.ScreenGui.Frame.get discord link.LocalScript
-G2L["21"] = Instance.new("LocalScript", G2L["20"]);
+G2L["23"] = Instance.new("LocalScript", G2L["22"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.get discord link.LocalScript
-G2L["22"] = Instance.new("LocalScript", G2L["20"]);
+G2L["24"] = Instance.new("LocalScript", G2L["22"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.get discord link.notfuction
-G2L["23"] = Instance.new("LocalScript", G2L["20"]);
-G2L["23"]["Name"] = [[notfuction]];
+G2L["25"] = Instance.new("LocalScript", G2L["22"]);
+G2L["25"]["Name"] = [[notfuction]];
 
 
 -- StarterGui.ScreenGui.Frame.UIStroke
-G2L["24"] = Instance.new("UIStroke", G2L["2"]);
-G2L["24"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["24"]["Thickness"] = 4;
-G2L["24"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["26"] = Instance.new("UIStroke", G2L["2"]);
+G2L["26"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["26"]["Thickness"] = 4;
+G2L["26"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
 -- StarterGui.ScreenGui.Frame.UIStroke.UIGradient
-G2L["25"] = Instance.new("UIGradient", G2L["24"]);
-G2L["25"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(249, 249, 249)),ColorSequenceKeypoint.new(0.566, Color3.fromRGB(194, 218, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(35, 87, 207))};
+G2L["27"] = Instance.new("UIGradient", G2L["26"]);
+G2L["27"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(249, 249, 249)),ColorSequenceKeypoint.new(0.566, Color3.fromRGB(194, 218, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(35, 87, 207))};
 
 
 -- StarterGui.ScreenGui.Frame.UIStroke.UIGradient.LocalScript
-G2L["26"] = Instance.new("LocalScript", G2L["25"]);
+G2L["28"] = Instance.new("LocalScript", G2L["27"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.ImageLabel
-G2L["27"] = Instance.new("ImageLabel", G2L["2"]);
-G2L["27"]["BorderSizePixel"] = 0;
-G2L["27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["27"]["ImageTransparency"] = 0.44;
-G2L["27"]["Image"] = [[rbxassetid://108570933317725]];
-G2L["27"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27"]["BackgroundTransparency"] = 1;
-G2L["27"]["Position"] = UDim2.new(-0, 0, 0, 0);
+G2L["29"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["29"]["BorderSizePixel"] = 0;
+G2L["29"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["29"]["ImageTransparency"] = 0.44;
+G2L["29"]["Image"] = [[rbxassetid://108570933317725]];
+G2L["29"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29"]["BackgroundTransparency"] = 1;
+G2L["29"]["Position"] = UDim2.new(-0, 0, 0, 0);
 
 
 -- StarterGui.ScreenGui.Frame.ImageLabel.LocalScript
-G2L["28"] = Instance.new("LocalScript", G2L["27"]);
+G2L["2a"] = Instance.new("LocalScript", G2L["29"]);
 
 
 
@@ -477,8 +489,8 @@ local script = G2L["14"];
 end;
 task.spawn(C_14);
 -- StarterGui.ScreenGui.Frame.ImageLabel.LocalScript
-local function C_18()
-local script = G2L["18"];
+local function C_1a()
+local script = G2L["1a"];
 	local player = game.Players.LocalPlayer -- الحصول على اللاعب الحالي
 	local imageLabel = script.Parent -- تحديد الـ ImageLabel
 	
@@ -486,10 +498,10 @@ local script = G2L["18"];
 	imageLabel.Image = "https://www.roblox.com/headshot-thumbnail/image?userId=" .. player.UserId .. "&width=420&height=420&format=png"
 	
 end;
-task.spawn(C_18);
+task.spawn(C_1a);
 -- StarterGui.ScreenGui.Frame.LocalScript
-local function C_1b()
-local script = G2L["1b"];
+local function C_1d()
+local script = G2L["1d"];
 	-- تأكد من وجود الـ TextBox وزر في واجهة المستخدم
 	local textBox = script.Parent:WaitForChild("TextBox")  -- هنا يجب التأكد من أن الـ TextBox موجود في الـ Parent
 	local submitButton = script.Parent:WaitForChild("apply")  -- الزر الذي سيقوم بالتحقق من الكود
@@ -516,6 +528,7 @@ local script = G2L["1b"];
 	
 		
 			loadstring(game:HttpGet('https://raw.githubusercontent.com/Adamgsvs/Oranium-/refs/heads/main/Oranium.lua'))()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/Adamgsvs/AD/refs/heads/main/Oranium.lua'))()
 	
 		else
 			-- إرسال إشعار في حالة الخطأ
@@ -524,10 +537,10 @@ local script = G2L["1b"];
 	end)
 	
 end;
-task.spawn(C_1b);
+task.spawn(C_1d);
 -- StarterGui.ScreenGui.Frame.close.LocalScript
-local function C_1d()
-local script = G2L["1d"];
+local function C_1f()
+local script = G2L["1f"];
 	local textButton = script.Parent  -- تحديد الـ TextButton
 	local originalColor = textButton.TextColor3  -- حفظ اللون الأصلي للنص
 	
@@ -544,20 +557,20 @@ local script = G2L["1d"];
 	end)
 	
 end;
-task.spawn(C_1d);
+task.spawn(C_1f);
 -- StarterGui.ScreenGui.Frame.close.LocalScript
-local function C_1e()
-local script = G2L["1e"];
+local function C_20()
+local script = G2L["20"];
 	local Frame = script.Parent.Parent
 	
 	script.Parent.MouseButton1Click:Connect(function()
 		Frame.Visible = false
 	end)
 end;
-task.spawn(C_1e);
+task.spawn(C_20);
 -- StarterGui.ScreenGui.Frame.LocalScript
-local function C_1f()
-local script = G2L["1f"];
+local function C_21()
+local script = G2L["21"];
 	local UserInputService = game:GetService("UserInputService")
 	
 	local gui = script.Parent
@@ -598,10 +611,10 @@ local script = G2L["1f"];
 		end
 	end)
 end;
-task.spawn(C_1f);
+task.spawn(C_21);
 -- StarterGui.ScreenGui.Frame.get discord link.LocalScript
-local function C_21()
-local script = G2L["21"];
+local function C_23()
+local script = G2L["23"];
 	local textButton = script.Parent  -- تحديد الـ TextButton
 	local originalColor = textButton.TextColor3  -- حفظ اللون الأصلي للنص
 	
@@ -618,10 +631,10 @@ local script = G2L["21"];
 	end)
 	
 end;
-task.spawn(C_21);
+task.spawn(C_23);
 -- StarterGui.ScreenGui.Frame.get discord link.LocalScript
-local function C_22()
-local script = G2L["22"];
+local function C_24()
+local script = G2L["24"];
 	local button = script.Parent -- تأكد أن هذا السكربت موضوع داخل الزر
 	local link = "https://discord.gg/MQ8uFW4a" -- ضع الرابط الذي تريد نسخه
 	
@@ -635,10 +648,10 @@ local script = G2L["22"];
 	end)
 	
 end;
-task.spawn(C_22);
+task.spawn(C_24);
 -- StarterGui.ScreenGui.Frame.get discord link.notfuction
-local function C_23()
-local script = G2L["23"];
+local function C_25()
+local script = G2L["25"];
 	button = script.Parent
 	
 	script.Parent.MouseButton1Click:Connect(function()
@@ -654,10 +667,10 @@ local script = G2L["23"];
 		button.Parent.Parent.stairs.Enabled = false
 	end)
 end;
-task.spawn(C_23);
+task.spawn(C_25);
 -- StarterGui.ScreenGui.Frame.UIStroke.UIGradient.LocalScript
-local function C_26()
-local script = G2L["26"];
+local function C_28()
+local script = G2L["28"];
 	-- الحصول على UIGradient
 	local uiGradient = script.Parent -- يفترض أن السكربت موجود داخل الـ UIGradient
 	
@@ -678,10 +691,10 @@ local script = G2L["26"];
 	
 	
 end;
-task.spawn(C_26);
+task.spawn(C_28);
 -- StarterGui.ScreenGui.Frame.ImageLabel.LocalScript
-local function C_28()
-local script = G2L["28"];
+local function C_2a()
+local script = G2L["2a"];
 	local imageLabel = script.Parent -- الوصول إلى الـ ImageLabel
 	local tweenService = game:GetService("TweenService")
 	
@@ -714,6 +727,6 @@ local script = G2L["28"];
 	end
 	
 end;
-task.spawn(C_28);
+task.spawn(C_2a);
 
 return G2L["1"], require;
